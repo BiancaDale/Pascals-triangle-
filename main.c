@@ -3,20 +3,17 @@
 
 int main() {
     int i, j;
-    /* TODO: define the 2D pointer variable here */
     int **pnumbers;
 
-    /* TODO: Complete the following line to allocate memory for holding three rows */
     pnumbers = (int **) malloc(7  *sizeof(int *));
-
-    /* TODO: Allocate memory for storing the individual elements in a row */
+	
     pnumbers[0] = (int *) malloc(1 * sizeof(int));
     pnumbers[1] = (int *) malloc(2 * sizeof(int));
     pnumbers[2] = (int *) malloc(3 * sizeof(int));
     pnumbers[3] = (int *) malloc(4 * sizeof(int));
     pnumbers[4] = (int *) malloc(5 * sizeof(int));
     pnumbers[5] = (int *) malloc(6 * sizeof(int));
-	pnumbers[6] = (int *) malloc(7 * sizeof(int));
+    pnumbers[6] = (int *) malloc(7 * sizeof(int));
 
     pnumbers[0][0] = 1;
     pnumbers[1][0] = 1;
@@ -27,7 +24,7 @@ int main() {
     pnumbers[3][0] = 1;
     pnumbers[3][1] = 3;
     pnumbers[3][2] = 3;
-	  pnumbers[3][3] = 1;
+    pnumbers[3][3] = 1;
     pnumbers[4][0] = 1;
     pnumbers[4][1] = 4;
     pnumbers[4][2] = 6;
